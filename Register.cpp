@@ -49,3 +49,10 @@ int main() {
 
         string key;
         cin >> key;
+        if (key == "exit") {
+            break;
+        }
+    }
+
+    return 0;
+}
