@@ -22,3 +22,5 @@ private:
 
     void saveToFile(User user);
 };
+
+#endif //REGISTRATION_H
