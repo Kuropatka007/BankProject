@@ -65,3 +65,5 @@ User::User(string id, string name, string email, string phone, string userType, 
     this->phone = phone;
     this->userType = userType;
     this->role = role;
+
+    }
