@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/sasar/CLionProjects/BankProject1/main.cpp" "CMakeFiles/BankProject.dir/main.cpp.obj" "gcc" "CMakeFiles/BankProject.dir/main.cpp.obj.d"
+  "C:/Users/sasar/CLionProjects/BankProject1/utils/DateUtil.cpp" "CMakeFiles/BankProject.dir/utils/DateUtil.cpp.obj" "gcc" "CMakeFiles/BankProject.dir/utils/DateUtil.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

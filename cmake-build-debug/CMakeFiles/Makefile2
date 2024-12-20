@@ -80,12 +80,12 @@ clean: CMakeFiles/BankProject.dir/clean
 CMakeFiles/BankProject.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BankProject.dir\build.make CMakeFiles/BankProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BankProject.dir\build.make CMakeFiles/BankProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sasar\CLionProjects\BankProject1\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target BankProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sasar\CLionProjects\BankProject1\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target BankProject"
 .PHONY : CMakeFiles/BankProject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/BankProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sasar\CLionProjects\BankProject1\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sasar\CLionProjects\BankProject1\cmake-build-debug\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/BankProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sasar\CLionProjects\BankProject1\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/BankProject.dir/rule

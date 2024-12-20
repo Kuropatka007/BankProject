@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\BankProject.dir\build.make CMakeFiles/BankProject.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+utils/DateUtil.obj: utils/DateUtil.cpp.obj
+.PHONY : utils/DateUtil.obj
+
+# target to build an object file
+utils/DateUtil.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BankProject.dir\build.make CMakeFiles/BankProject.dir/utils/DateUtil.cpp.obj
+.PHONY : utils/DateUtil.cpp.obj
+
+utils/DateUtil.i: utils/DateUtil.cpp.i
+.PHONY : utils/DateUtil.i
+
+# target to preprocess a source file
+utils/DateUtil.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BankProject.dir\build.make CMakeFiles/BankProject.dir/utils/DateUtil.cpp.i
+.PHONY : utils/DateUtil.cpp.i
+
+utils/DateUtil.s: utils/DateUtil.cpp.s
+.PHONY : utils/DateUtil.s
+
+# target to generate assembly for a file
+utils/DateUtil.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\BankProject.dir\build.make CMakeFiles/BankProject.dir/utils/DateUtil.cpp.s
+.PHONY : utils/DateUtil.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... utils/DateUtil.obj
+	@echo ... utils/DateUtil.i
+	@echo ... utils/DateUtil.s
 .PHONY : help
 
 

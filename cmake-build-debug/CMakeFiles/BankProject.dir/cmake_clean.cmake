@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "BankProject.pdb"
   "CMakeFiles/BankProject.dir/main.cpp.obj"
   "CMakeFiles/BankProject.dir/main.cpp.obj.d"
+  "CMakeFiles/BankProject.dir/utils/DateUtil.cpp.obj"
+  "CMakeFiles/BankProject.dir/utils/DateUtil.cpp.obj.d"
   "libBankProject.dll.a"
 )
 
