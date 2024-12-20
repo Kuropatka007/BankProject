@@ -1,22 +1,20 @@
-
-
 #ifndef ACCOUNT_H
 #define ACCOUNT_H
 #include "../User.h"
-
 #include <iostream>
 using namespace std;
 class Account {
-private:    int id;
+private:    string id;
     User applicant;    string date;
     string status;
 public:    Account();
-    Account(int id, User applicant, string date, string status);
-    int getId();
-    int getStatus();
+    Account(User applicant);
+    string getId();
+    string getStatus();
     void setStatus(string status);
 
     string getDate();
-    User getApplicant();};
+    User getApplicant();
+    void show();};
 
 #endif //ACCOUNT_H

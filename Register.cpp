@@ -1,58 +1,33 @@
-#include <iostream>
+//
+// Created by student on 15.12.2024.
+//
 
 #include "Registration.h"
-#include "User.h"
-#include "utils/UUID.h"
 
-using namespace std;
-using namespace uuid;
-int main() {
-    while (true) {
+void Registration::registerUser(User user) {
 
-        cout << "Welcome to the Bank! " << endl;
-        cout << "Choose what do you want to do \n1. Login\n2.Register ";
-        int choice;
-        cin >> choice;
-        switch (choice) {
-            case 1:
-                //Todo create login
-                    break;
-            case 2:
-                cout << "Enter your name: ";
-            string name;
-            cin >> name;
+    bool isValidEmail = validateEmail(user.getEmail());
+    bool isPhoneValid = validatePhone(user.getPhone());
 
-            cout << "Enter your email: ";
-            string email;
-            cin >> email;
-
-            cout << "Enter your phone: ";
-            string phone;
-            cin >> phone;
-
-            cout << "Enter your password: ";
-            string password;
-            cin >> password;
-
-            Registration registration;
-            string id = generate_uuid_v4();
-
-
-            User user(id,name, email,phone,"client","admin");
-            user.setPassword(password);
-
-            registration.registerUser(user);
-
-            break;
-
-        }
-
-        string key;
-        cin >> key;
-        if (key == "exit") {
-            break;
-        }
+    if (isValidEmail && isPhoneValid) {
+        saveToFile(user);
     }
+}
 
-    return 0;
+bool Registration::validateEmail(string email) {
+    const regex pattern
+       ("(\\w+)(\\.|_)?(\\w*)@(\\w+)(\\.(\\w+))+");
+    return regex_match(email, pattern);
+}
+
+bool Registration::validatePhone(string phone) {
+    if (phone.length() > 10) {
+        return true;
+    }
+    return false;
+}
+
+void Registration::saveToFile(User user) {
+    //TODO save to file
+    cout << "Saving to file " << user.getName() << endl;
 }

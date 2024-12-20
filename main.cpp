@@ -1,67 +1,66 @@
 #include <iostream>
-#include <string>
+
 #include "Registration.h"
 #include "User.h"
-#include "utils/UUID.h"
+#include "account/Account.h"
 
 using namespace std;
-using namespace uuid;
-
 int main() {
-    while (true) {
+    /*while (true) {
+
         cout << "Welcome to the Bank! " << endl;
-        cout << "Choose what do you want to do \n1. Login\n2. Register\n";
+        cout << "Choose what do you want to do \n1. Login\n2. Register ";
         int choice;
         cin >> choice;
-
         switch (choice) {
             case 1:
-                // TODO: create login logic
+                //Todo create login
                 break;
-
             case 2:
-                {
+                cout << "Enter your name: ";
+                string name;
+                cin >> name;
 
-                    cout << "Enter your name: ";
-                    string name;
-                    cin.ignore();
-                    getline(cin, name);
+                cout << "Enter your email: ";
+                string email;
+                cin >> email;
 
-                    cout << "Enter your email: ";
-                    string email;
-                    cin >> email;
+                cout << "Enter your phone: ";
+                string phone;
+                cin >> phone;
 
-                    cout << "Enter your phone: ";
-                    string phone;
-                    cin >> phone;
+                cout << "Enter your password: ";
+                string password;
+                cin >> password;
 
-                    cout << "Enter your password: ";
-                    string password;
-                    cin >> password;
+                Registration registration;
+                string id = generate_uuid_v4();
 
-                    string id = generate_uuid_v4();
 
-                    User user(id, name, email, phone, "client", "admin");
-                    user.setPassword(password);
+                User user(id,name, email,phone,"client","admin");
+                user.setPassword(password);
 
-                    Registration registration;
-                    registration.registerUser(user);
-                }
+                registration.registerUser(user);
+
                 break;
 
-            default:
-                cout << "Invalid choice. Try again.\n";
-                break;
         }
 
         string key;
-        cout << "Do you want to continue? Type 'exit' to quit or press any key to continue: ";
         cin >> key;
-
         if (key == "exit") {
             break;
         }
-    }
+    }*/
+
+
+    User user("Robert Jackson", "email@com","380391000002","client","admin");
+    Account* account = new Account(user);
+
+    account->show();
+
+
+    delete account;
 
     return 0;
 }

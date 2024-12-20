@@ -1,16 +1,18 @@
 //
-// Created by sasar on 20.12.2024.
+// Created by student on 20.12.2024.
 //
 
 #ifndef DATEUTIL_H
 #define DATEUTIL_H
-#include <string>
+
 #include <iostream>
+
 using namespace std;
 
 class DateUtil {
 public:
-    string getDate() {}
+
+    string getDate();
 };
 
 
